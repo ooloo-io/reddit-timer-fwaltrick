@@ -28,23 +28,8 @@ const GlobalStyle = createGlobalStyle`
     local("../fonts/bitter-v16-latin-500.woff2") format("woff2");
   }
 
-  *, *::before, *::after {
-    box-sizing: border-box;
-    }
-    
-  body{
-    font-family: ${(props) => props.theme.font.family.default};
-    font-size: ${(props) => props.theme.size.default};
-    line-height: ${(props) => props.theme.lineHeight.default};
-    color: ${(props) => props.theme.color.text};
-    background: ${(props) => props.theme.background.default};
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: ${(props) => props.theme.color.dark};
-    font-family: ${(props) => props.theme.font.family.eadline};
-    letter-spacing: ${(props) => props.theme.letterSpacing.heading};
-  }
+  body {
+    font-family: ${(props) => props.theme.fonts.montserrat};  }
 `;
 
 export default GlobalStyle;
