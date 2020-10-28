@@ -8,5 +8,14 @@
         "titleBar.inactiveBackground": "#eb542499",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
+        "eslint.validate": [
+            "vue",
+            "html",
+            "javascript",
+            "typescript",
+            "javascriptreact",
+            "typescriptreact"
+        ],
     "peacock.color": "#eb5424"
 }
+
