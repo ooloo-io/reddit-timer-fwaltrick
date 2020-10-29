@@ -5,6 +5,7 @@ import { Normalize } from 'styled-normalize';
 import GlobalStyle from './style/GlobalStyle';
 import Search from './pages/Search';
 import Home from './pages/Home';
+import Header from './components/Header';
 import theme from './style/Theme';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Normalize />
       <GlobalStyle />
+      <Header />
       <Router>
         <Switch>
           <Route path="/search">
