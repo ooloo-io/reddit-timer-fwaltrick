@@ -15,10 +15,19 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat";
     font-weight: 400;
     font-style: normal;
-    src: local("../fonts/Montserrat-Regular.woff") format("woff"),
-    local("../fonts/Montserrat-Regular.woff2") format("woff2");
+    src: local("../fonts/montserrat-v15-latin-regular.woff") format("woff"),
+    local("../fonts/montserrat-v15-latin-regular.woff2") format("woff2");
   }
  
+  /* Montserrat Bold */
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-style: normal;
+    src: local("../fonts/montserrat-v15-latin-800.woff") format("woff"),
+    local("../fonts/montserrat-v15-latin-800.woff2") format("woff2");
+  }
+
   /* Bitter 500 */
   @font-face {
     font-family: "Bitter";
@@ -29,7 +38,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: ${(props) => props.theme.fonts.montserrat};  }
+    font-family: ${(props) => props.theme.font.family.default};
+    font-size: ${(props) => props.theme.font.size.default};
+    line-height: ${(props) => props.theme.font.lineHeight.default};
+    color: ${(props) => props.theme.color.text};
+  }
 `;
 
 export default GlobalStyle;

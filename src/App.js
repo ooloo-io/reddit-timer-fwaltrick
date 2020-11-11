@@ -5,7 +5,8 @@ import { Normalize } from 'styled-normalize';
 import GlobalStyle from './style/GlobalStyle';
 import Search from './pages/Search';
 import Home from './pages/Home';
-import theme from './style/Theme';
+import PageNotFound from './pages/PageNotFound';
+import theme from './style/theme';
 
 function App() {
   return (
@@ -14,11 +15,14 @@ function App() {
       <GlobalStyle />
       <Router>
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/search">
             <Search />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route>
+            <PageNotFound />
           </Route>
         </Switch>
       </Router>
