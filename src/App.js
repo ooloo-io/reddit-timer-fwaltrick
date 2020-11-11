@@ -6,6 +6,7 @@ import GlobalStyle from './style/GlobalStyle';
 import Search from './pages/Search';
 import Home from './pages/Home';
 import Header from './components/Header';
+import PageNotFound from './pages/PageNotFound';
 import theme from './style/Theme';
 
 function App() {
@@ -16,11 +17,14 @@ function App() {
       <Header />
       <Router>
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/search">
             <Search />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route>
+            <PageNotFound />
           </Route>
         </Switch>
       </Router>
