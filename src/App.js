@@ -6,7 +6,7 @@ import GlobalStyle from './style/GlobalStyle';
 import Search from './pages/Search';
 import Home from './pages/Home';
 import PageNotFound from './pages/PageNotFound';
-import theme from './style/theme';
+import theme from './style/Theme';
 
 function App() {
   return (
